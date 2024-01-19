@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center; margin-top: 30px">
+      <form>
+        <input
+          style="margin-bottom: 5px"
+          type="text"
+          placeholder="name"
+          value="Ali"
+          readonly
+        /><br />
+        <input
+          style="margin-bottom: 5px"
+          type="text"
+          placeholder="name"
+          value="Ali"
+          disabled
+        /><br />
+        <input
+          style="margin-bottom: 5px"
+          type="text"
+          placeholder="name"
+          maxlength="10"
+          required
+          autofocus
+        /><br />
+        <input
+          style="margin-bottom: 5px"
+          type="email"
+          placeholder="email"
+          size="30"
+        /><br />
+        <input
+          style="margin-bottom: 5px"
+          type="email"
+          placeholder="multiple emails allowed"
+          size="30"
+          multiple
+        />
+        <br />
+        <input
+          style="margin-bottom: 5px"
+          type="number"
+          placeholder="number"
+          required
+        />
+        <br />
+        <input
+          list="cars"
+          style="margin-bottom: 5px"
+          placeholder="select car"
+        />
+        <datalist id="cars">
+          <option>car 1</option>
+          <option>car 2</option>
+          <option>car 3</option>
+          <option>car 4</option>
+          <option>car 5</option>
+        </datalist>
+        <br />
+        <input
+          style="margin-bottom: 5px"
+          type="tel"
+          placeholder="phone number"
+        />
+        <br />
+        <input
+          style="margin-bottom: 5px"
+          type="password"
+          placeholder="password"
+          minlength="8"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+        />
+        <br />
+        <input style="margin-bottom: 5px" type="search" placeholder="search" />
+        <br />
+        <input style="margin-bottom: 5px" type="url" placeholder="enter url " />
+        <br />
+        <label>check box:</label>
+        <input
+          style="margin-bottom: 5px"
+          type="checkbox"
+          placeholder="checkbox"
+          checked
+        />
+        <input
+          style="margin-bottom: 5px"
+          type="checkbox"
+          placeholder="checkbox"
+          required
+        />
+        <br />
+        <label>Pick Color:</label>
+        <input style="margin-bottom: 5px" type="color" placeholder="color" />
+        <br />
+        <label>Date: step-3 </label>
+        <input
+          style="margin-bottom: 5px"
+          type="date"
+          placeholder="date"
+          step="3"
+        />
+        <br />
+        <label>Time:</label>
+        <input style="margin-bottom: 5px" type="time" placeholder="time" />
+        <br />
+        <label>week:</label>
+        <input style="margin-bottom: 5px" type="week" placeholder="week" />
+        <br />
+        <input
+          style="margin-bottom: 5px"
+          type="datetime-local"
+          placeholder="datetime-local"
+        />
+        <br />
+        <label>Image: </label>
+        <input
+          style="margin-bottom: 5px"
+          type="file"
+          placeholder="file"
+          accept="image/png, image/jpeg"
+        />
+        <br />
+        <label>Document: </label>
+        <input
+          style="margin-bottom: 5px"
+          type="file"
+          placeholder="file"
+          accept=".doc,.docx,"
+        />
+        <br />
+        <label>Zip: </label>
+        <input
+          style="margin-bottom: 5px"
+          type="file"
+          placeholder="file"
+          accept=".zip,.rar,.7zip"
+        />
+        <br />
+        <label>Month:</label>
+        <input style="margin-bottom: 5px" type="month" placeholder="month" />
+        <br />
+        <label>Range:</label>
+        <input
+          style="margin-bottom: 5px"
+          type="range"
+          placeholder="Range"
+          min="0"
+          max="100"
+        />
+        <br />
+        <input style="margin-bottom: 5px" type="radio" placeholder="Radio" />
+        <label> Radio</label>
+        <br />
+        <label for="environment">Capture environment:</label>
+        <br />
+        <input
+          type="file"
+          id="environment"
+          capture="environment"
+          accept="video/*"
+        />
+        <br />
+        <input
+          type="image"
+          src="icon.png"
+          alt="Submit"
+          width="30"
+          height="15"
+        />
+        <br />
+        <input style="margin-bottom: 5px" type="submit" placeholder="submit" />
+        <input style="margin-bottom: 5px" type="reset" placeholder="submit" />
+      </form>
+    </div>
+  </body>
+</html>
